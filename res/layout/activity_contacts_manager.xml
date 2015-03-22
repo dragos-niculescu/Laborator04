@@ -8,7 +8,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ContactsManagerActivity" >
 
-    <FrameLayout
+   <FrameLayout
         android:id="@+id/frameLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,14 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="2dp" >
 
-        <fragment
-            android:id="@+id/fragment1"
-            android:name="ro.pub.cs.systems.pdsd.lab04.contactsmanager.BasicDetails"
-            android:layout_width="match_parent"
-            android:layout_height="229dp"
-            android:layout_gravity="top"
-            tools:layout="@layout/basic_details" />
-
+    
     </FrameLayout>
 
     <Space
@@ -41,12 +34,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="4dp" >
 
-        <fragment
-            android:id="@+id/fragment2"
-            android:name="ro.pub.cs.systems.pdsd.lab04.contactsmanager.AdditionalDetails"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:layout="@layout/additional_details" />
+       
 
     </FrameLayout>
 
