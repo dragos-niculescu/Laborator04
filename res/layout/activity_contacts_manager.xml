@@ -6,11 +6,48 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="ro.pub.cs.systems.pdsd.lab04.contactsmanager.ContactsManagerActivity" >
+    tools:context=".ContactsManagerActivity" >
 
-    <TextView
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp" >
+
+        <fragment
+            android:id="@+id/fragment1"
+            android:name="ro.pub.cs.systems.pdsd.lab04.contactsmanager.BasicDetails"
+            android:layout_width="match_parent"
+            android:layout_height="229dp"
+            android:layout_gravity="top"
+            tools:layout="@layout/basic_details" />
+
+    </FrameLayout>
+
+    <Space
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_below="@+id/frameLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp" >
+
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="ro.pub.cs.systems.pdsd.lab04.contactsmanager.AdditionalDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/additional_details" />
+
+    </FrameLayout>
 
 </RelativeLayout>
